@@ -264,7 +264,7 @@
         foreach ($shippableItems as $item) {
             $product = StoreProduct::getByID($item['product']['pID']);
             if ($product->isShippable()) {
-                $totalProductWeight = $item['product']['qty'] * $product->getProductWeight();
+                $totalProductWeight = $item['product']['qty'] * $product->getWeight();
                 $totalWeight = $totalWeight + $totalProductWeight;
             }
         }
@@ -283,12 +283,9 @@
         $totalPrice = 0;
         foreach ($shippableItems as $item) {
           $product = StoreProduct::getByID($item['product']['pID']);
+
           if ($product->isShippable()) {
-              $productPrice = $product->getProductPrice();
-              $productSalePrice = $product->getProductSalePrice();
-              if(!empty($productSalePrice) && $productSalePrice != 0){
-                $productPrice = $productSalePrice;
-              }
+              $productPrice = $product->getActivePrice();
               $totalProductPrice = $item['product']['qty'] * $productPrice;
               $totalPrice = $totalPrice + $totalProductPrice;
           }
