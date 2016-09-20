@@ -1,0 +1,37 @@
+msgid "Adds the table rate shipping method to Concrete5 Community store."
+msgstr ""
+
+msgid "Table Rate shipping"
+msgstr ""
+
+msgid "This package requires that Community Store be installed"
+msgstr ""
+
+msgid "CSV File"
+msgstr ""
+
+msgid "Only select a file to update your table rates"
+msgstr ""
+
+msgid "Download current CSV file"
+msgstr ""
+
+msgid ""
+"To create a csv file compatible with this package, you should create a csv "
+"file which has the same structure as a Magento Table rate.<br/>"
+msgstr ""
+
+msgid "Important: Use two letter codes to generate a csv file."
+msgstr ""
+
+msgid "For an example go to "
+msgstr ""
+
+msgid "Magento table rate generator"
+msgstr ""
+
+msgid "You need to add the method first. After adding, edit the shipping method to add the csv file."
+msgstr ""
+
+msgid "Choose a csv"
+msgstr ""
