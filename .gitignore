@@ -1,4 +1,6 @@
-config/site.php
-files/cache/*
-files/tmp/*
-.htaccess
+desktop.ini
+.project
+.DS_Store
+thumbs.db
+/.settings/
+/.buildpath
