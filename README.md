@@ -10,4 +10,3 @@ Important: Concrete5 uses 2-letter codes, so be sure the generator outputs the c
 
 Notice : This package only checks country and not state/region.  
 Requirements : PHP 5.3 (to read the csv file)  
-Package created by jozzeh, dev at [ABC IT & Web Solutions](https://www.mijnwebsitebouwen.be)
