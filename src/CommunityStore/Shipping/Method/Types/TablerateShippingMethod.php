@@ -1,5 +1,5 @@
 <?php
-  namespace Concrete\Package\StoreTablerate\Src\CommunityStore\Shipping\Method\Types;
+  namespace Concrete\Package\CommunityStoreShippingTablerate\Src\CommunityStore\Shipping\Method\Types;
 
   use Package;
   use Core;
@@ -18,7 +18,7 @@
    */
   class TablerateShippingMethod extends StoreShippingMethodTypeMethod{
     public function getShippingMethodTypeName() {
-        return t('Table Rate Method');
+        return t('Table Rate');
     }
     /**
      * @Column(type="string")
@@ -76,7 +76,7 @@
         $this->set('form', Core::make("helper/form"));
         $this->set('fileUpload', Core::make('helper/concrete/file_manager'));
         $this->set('smt', $this);
-        $pkg = Package::getByHandle("store_tablerate");
+        $pkg = Package::getByHandle("community_store_shipping_tablerate");
         $pkgconfig = $pkg->getConfig();
         $this->set('config', $pkgconfig);
         if (is_object($shippingMethod)) {
@@ -88,7 +88,7 @@
     }
     public function addMethodTypeMethod($data){
       //$sm->add('tablerate','Table Rate',$pkg);
-      $pkg = Package::getByHandle('store_tablerate');
+      $pkg = Package::getByHandle('community_store_shipping_tablerate');
       $pkgID = $pkg->getPackageID();
       $sm = new self();
 
