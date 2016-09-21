@@ -1,4 +1,4 @@
-# store_tablerate
+# community_store_tablerate
 In this package you can choose 3 different conditions as a base for your table rates.  
 1. Number of items vs destination  
 2. Price vs destination  
