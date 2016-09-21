@@ -1,5 +1,5 @@
 <?php
-namespace Concrete\Package\StoreTablerate;
+namespace Concrete\Package\CommunityStoreShippingTablerate;
 
 use Concrete\Package\CommunityStore\Src\CommunityStore\Shipping\Method\ShippingMethodType as StoreShippingMethodType;
 use Package;
@@ -9,7 +9,7 @@ use Whoops\Exception\ErrorException;
 
 class controller extends Package{
 
-  protected $pkgHandle = 'store_tablerate';
+  protected $pkgHandle = 'community_store_shipping_tablerate';
   protected $appVersionRequired = '5.7.5.8';
   protected $pkgVersion = '1.0';
 
@@ -18,7 +18,7 @@ class controller extends Package{
   }
 
   public function getPackageName(){
-    return t("Table Rate shipping");
+    return t("Community Store Table Rate shipping");
   }
 
   public function install(){
