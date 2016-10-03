@@ -27,7 +27,9 @@ extract($vars);
     </div>
     <div class="col-xs-12 col-sm-6">
          <div class="form-group">
-           <?php if(!empty($smtm->getShippingMethodID())){ ?>
+           <?php 
+             $checkShippingMethod = $smtm->getShippingMethodID();
+             if(!empty($checkShippingMethod)){ ?>
                 <?php  echo $form->label('csvFile', t("CSV File")); ?>
                 <span class="small" style="color: #999">
                     <?php echo t('Only select a file to update your table rates'); ?>
@@ -44,7 +46,8 @@ extract($vars);
 <div class="row">
     <div class="col-sm-12">
         <?php
-        if(!empty($smtm->getCsvFile()) && $smtm->getCsvFile() != 0){
+        $checkCsvFile = $smtm->getCsvFile();
+        if(!empty($checkCsvFile) && $checkCsvFile != 0){
             $f = File::getByID($smtm->getCsvFile());
             $fv = $f->getRecentVersion();
             echo '<a href="'.$fv->getForceDownloadURL().'" class="btn btn-primary">'.t('Download current CSV file').'</a><br/>';
