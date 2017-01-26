@@ -29,7 +29,7 @@ extract($vars);
          <div class="form-group">
            <?php 
              $checkShippingMethod = $smtm->getShippingMethodID();
-             if(!empty($checkShippingMethod)){ ?>
+             if($checkShippingMethod !== null){ ?>
                 <?php  echo $form->label('csvFile', t("CSV File")); ?>
                 <span class="small" style="color: #999">
                     <?php echo t('Only select a file to update your table rates'); ?>
