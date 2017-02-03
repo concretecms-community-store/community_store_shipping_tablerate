@@ -133,10 +133,10 @@
     public function insertCsvFile($data, $sm){
       $csvFile = File::getByID($data['csvFile']);
       $fv = $csvFile->getRecentVersion();
-      $path = $fv->getURL();
+      $path = $fv->getUrl();
       $csvAsArray = array_map('str_getcsv', file($path));
 
-      $smID = $sm->getShippingMethodTypeMethodID();
+      $smID = $sm->getShippingMethodID();
       $db = Database::connection();
       $dData = array();
       $dData[] = $smID;
