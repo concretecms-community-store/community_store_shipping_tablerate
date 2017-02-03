@@ -84,6 +84,7 @@
         } else {
             $smtm = new self();
         }
+
         $this->set("smtm", $smtm);
     }
     public function addMethodTypeMethod($data){
@@ -101,9 +102,7 @@
         $sm->setCsvFile(0);
       }
 
-      $em = Database::get()->getEntityManager();
-      $em->persist($sm);
-      $em->flush();
+      $sm->save();
 
       if(!empty($data['csvFile']) && $data['csvFile'] != 0){
         $this->insertCsvFile($data, $sm);
@@ -119,10 +118,11 @@
       if(!empty($data['csvFile'])){
         $sm->setCsvFile($data['csvFile']);
       }
+      $sm->save();
 
-      $em = Database::get()->getEntityManager();
-      $em->persist($sm);
-      $em->flush();
+      //$em = Database::get()->getEntityManager();
+      //$em->persist($sm);
+      //$em->flush();
 
       if(!empty($data['csvFile']) && $data['csvFile'] != 0){
         $this->insertCsvFile($data, $sm);
@@ -136,7 +136,7 @@
       $path = $fv->getURL();
       $csvAsArray = array_map('str_getcsv', file($path));
 
-      $smID = $sm->getShippingMethodID();
+      $smID = $sm->getShippingMethodTypeMethodID();
       $db = Database::connection();
       $dData = array();
       $dData[] = $smID;
