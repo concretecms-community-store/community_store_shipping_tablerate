@@ -27,8 +27,9 @@ extract($vars);
     </div>
     <div class="col-xs-12 col-sm-6">
          <div class="form-group">
-           <?php 
-             $checkShippingMethod = $smtm->getShippingMethodID();
+           <?php
+             $checkShippingMethod = $smtm->getShippingMethodTypeMethodID();
+
              if($checkShippingMethod !== null){ ?>
                 <?php  echo $form->label('csvFile', t("CSV File")); ?>
                 <span class="small" style="color: #999">
