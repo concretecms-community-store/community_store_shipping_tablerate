@@ -11,29 +11,30 @@
   use Concrete\Package\CommunityStore\Src\CommunityStore\Customer\Customer as StoreCustomer;
   use Concrete\Package\CommunityStore\Src\CommunityStore\Utilities\Calculator as StoreCalculator;
   use Concrete\Package\CommunityStore\Src\CommunityStore\Shipping\Method\ShippingMethodOffer as StoreShippingMethodOffer;
+  use Doctrine\ORM\Mapping as ORM;
 
   /**
-   * @Entity
-   * @Table(name="CommunityStoreTablerateMethods")
+   * @ORM\Entity
+   * @ORM\Table(name="CommunityStoreTablerateMethods")
    */
   class TablerateShippingMethod extends StoreShippingMethodTypeMethod{
     public function getShippingMethodTypeName() {
         return t('Table Rate');
     }
     /**
-     * @Column(type="string")
+     * @ORM\Column(type="string")
      */
     protected $rateType;
     /**
-     * @Column(type="float")
+     * @ORM\Column(type="float")
      */
     protected $minimumAmount;
     /**
-     * @Column(type="float")
+     * @ORM\Column(type="float")
      */
     protected $maximumAmount;
     /**
-     * @Column(type="integer")
+     * @ORM\Column(type="integer")
      */
     protected $csvFile;
 

@@ -10,8 +10,12 @@ use Whoops\Exception\ErrorException;
 class controller extends Package{
 
   protected $pkgHandle = 'community_store_shipping_tablerate';
-  protected $appVersionRequired = '5.7.5.8';
-  protected $pkgVersion = '1.0';
+  protected $appVersionRequired = '8.0';
+  protected $pkgVersion = '2.0';
+
+    protected $pkgAutoloaderRegistries = array(
+        'src/CommunityStore' => 'Concrete\Package\CommunityStoreShippingTablerate\Src\CommunityStore',
+    );
 
   public function getPackageDescription(){
     return t("Adds the table rate shipping method to Concrete5 Community store.");
