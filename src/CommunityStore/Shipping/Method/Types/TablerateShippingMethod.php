@@ -149,7 +149,7 @@
           $uData[] = $smID;
           $uData[] = $row[0];
           $uData[] = $row[1];
-          $uData[] = $row[3];
+          $uData[] = (float) $row[3];
           $uData[] = $row[4];
           $db->Execute('insert into CommunityStoreTablerateConditions (trID, country, state, checkValue, shippingPrice) values (?,?,?,?,?)', $uData);
         }else{
