@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: cali <olivier@adquate.net>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+
+msgid "Adds the table rate shipping method to Concrete5 Community store."
+msgstr ""
+"Ajouter un tableau de tarifs d'expédition dans la boutique communautaire de "
+"Concrete5."
+
+msgid "Table Rate shipping"
+msgstr "Tableau de tarifs d'expédition"
+
+msgid "This package requires that Community Store be installed"
+msgstr "Ce paquet requière que la boutique communautaire soit installée"
+
+msgid "CSV File"
+msgstr "Fichier CSV"
+
+msgid "Only select a file to update your table rates"
+msgstr "Sélectionnez un fichier uniquement pour mettre à jour vos tarifs"
+
+msgid "Download current CSV file"
+msgstr "Télécharger le fichier CSV actuel"
+
+msgid ""
+"To create a csv file compatible with this package, you should create a csv "
+"file which has the same structure as a Magento Table rate.<br/>"
+msgstr ""
+"Pour créer un fichier csv compatible avec ce paquet, vous devrez créer un "
+"fichier csv qui à la même structure que les tableaux de tarifs de Mangento."
+"<br />"
+
+msgid "Important: Use two letter codes to generate a csv file."
+msgstr ""
+"Important: Utiliser un code à deux lettres pour générer un fichier csv."
+
+msgid "For an example go to "
+msgstr "Pour avoir un exemple aller sur "
+
+msgid "Magento table rate generator"
+msgstr "Générateur de tableau de tarifs Magento"
+
+msgid ""
+"You need to add the method first. After adding, edit the shipping method to "
+"add the csv file."
+msgstr ""
+"Vous devez ajouter la méthode d'abord. Après l'ajout, éditez la méthode "
+"d'envoie pour ajouter le fichier csv."
+
+msgid "Choose a csv"
+msgstr "Choisir un csv"
