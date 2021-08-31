@@ -149,8 +149,8 @@
           $uData[] = $smID;
           $uData[] = $row[0];
           $uData[] = $row[1];
-          $uData[] = $row[3];
-          $uData[] = $row[4];
+          $uData[] = (float) $row[3]; // otherwise empty values throw an error as they are empty strings and the DB expects a float
+          $uData[] = $row[4]; // no problem here as the DB expects a string
           $db->Execute('insert into CommunityStoreTablerateConditions (trID, country, state, checkValue, shippingPrice) values (?,?,?,?,?)', $uData);
         }else{
           $skipFirst++;
