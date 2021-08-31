@@ -11,7 +11,7 @@ class controller extends Package{
 
   protected $pkgHandle = 'community_store_shipping_tablerate';
   protected $appVersionRequired = '8.0';
-  protected $pkgVersion = '2.0';
+  protected $pkgVersion = '2.1';
 
     protected $pkgAutoloaderRegistries = array(
         'src/CommunityStore' => 'Concrete\Package\CommunityStoreShippingTablerate\Src\CommunityStore',
